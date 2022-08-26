@@ -4,73 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <title>Ice Cream Order</title>
+    <title>Ice Cream Creator</title>
   </head>
   <body>
-    <h1>Ice Cream Order</h1>
+    <h1>Ice Cream Creator</h1>
     <form>
       <div class="wrapper">
         <h2>Maak uw Keuze</h2>
         <div class="keuze">
-          <div class="radio">
-            <label for="horentje">Horentje</label>
-            <input type="radio" name="keuze" id="horentje" value="horentje" />
-            <img class="image" src="images/horentje.svg" alt="horentje icoon" />
+          <div class="label" id="horentje">Horentje:</div>
+          <div class="radio" id="radiobtn1">
+            <input type="radio" name="keuze" value="horentje" class="radioCheck" />
           </div>
+          <img
+            class="image"
+            id="img1"
+            src="images/horentje.svg"
+            alt="horentje icoon"
+          />
 
-          <div class="radio">
-            <label for="potje">Potje</label>
-            <img class="image" src="images/potje.svg" alt="Potje icoon" />
-            <input type="radio" name="keuze" id="potje" value="potje" />
+          <div class="label" id="potje">Potje:</div>
+          <div class="radio" id="radiobtn2">
+            <input type="radio" name="keuze" value="potje" />
           </div>
+          <img
+            class="image"
+            id="img2"
+            src="images/potje.svg"
+            alt="Potje icoon"
+          />
         </div>
+
         <h2>Welke smaken?</h2>
         <div class="smaak">
-          <div class="checkbox">
-            <label for="chocolade">Chocolade</label>
-            <input type="checkbox" name="chocolade" id="chocolade" />
-            <img class="image" src="images/choco.svg" alt="chocolade icoon" />
+          <div class="label" id="choco">Chocolade:</div>
+          <div class="checkbox" id="checkbtn1">
+            <input type="checkbox" name="chocolade" />
           </div>
+          <img
+            class="image"
+            id="img3"
+            src="images/choco.svg"
+            alt="chocolade icoon"
+          />
 
-          <div class="checkbox">
-            <label for="vanille">Vanille</label>
-            <input type="checkbox" name="vanille" id="vanille" />
-            <img class="image" src="images/vanille.svg" alt="vanille icoon" />
+          <div class="label" id="vanille">Vanille:</div>
+          <div class="checkbox" id="checkbtn2">
+            <input type="checkbox" name="vanille" />
           </div>
+          <img
+            class="image"
+            id="img4"
+            src="images/vanille.svg"
+            alt="vanille icoon"
+          />
 
-          <div class="checkbox">
-            <label for="aardbei">Aardbei</label>
-            <input type="checkbox" name="aardbei" id="aardbei" />
-            <img class="image" src="images/aardbei.svg" alt="aardbei icoon" />
+          <div class="label" id="aardbei">Aardbei:</div>
+          <div class="checkbox" id="checkbtn3">
+            <input type="checkbox" name="aardbei" />
           </div>
+          <img
+            class="image"
+            id="img5"
+            src="images/aardbei.svg"
+            alt="aardbei icoon"
+          />
         </div>
-        <h2>Hoeveel bolletjes?</h2>
-        <div class="aantal">
-          <div class="number">
-            <label for="aantalHorentje">Aantal Bolletjes:</label>
-            <input
-              type="number"
-              name="aantalHorentje"
-              id="aantalHorentje"
-              min="1"
-              max="4"
-            />
-          </div>
-          <div class="number">
-            <label for="aantalPotje">Aantal Bolletjes:</label>
-            <input
-              type="number"
-              name="aantalPotje"
-              id="aantalPotje"
-              min="1"
-              max="3"
-            />
-          </div>
+
+        <div class="buttons">
+          <button class="btns" id="btn1" type="reset">Resetten</button>
+          <button class="btns" id="btn2" type="submit">Bestellen</button>
         </div>
-        <button type="reset">Resetten</button>
-        <button type="submit">Bestellen</button>
       </div>
     </form>
   </body>
