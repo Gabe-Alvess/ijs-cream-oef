@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<g>
+	
+		<linearGradient id="Path_213_00000080173146432836563960000017278240098732216477_" gradientUnits="userSpaceOnUse" x1="87.2992" y1="-317.716" x2="87.2406" y2="-317.1923" gradientTransform="matrix(28.674 0 0 28.6741 -2474.3198 9144.3223)">
+		<stop  offset="0" style="stop-color:#FEECD2"/>
+		<stop  offset="1" style="stop-color:#CDAC82"/>
+	</linearGradient>
+	<path id="Path_213" style="fill:url(#Path_213_00000080173146432836563960000017278240098732216477_);" d="M42.449,40.795
+		c0,7.865-6.4,14.236-14.3,14.236s-14.3-6.371-14.3-14.236c0-7.865,6.4-14.236,14.3-14.236
+		C36.049,26.46,42.449,32.831,42.449,40.795L42.449,40.795z"/>
+	
+		<linearGradient id="Path_214_00000121267898615036799970000011488971573629159847_" gradientUnits="userSpaceOnUse" x1="87.3019" y1="-317.7149" x2="87.2432" y2="-317.1912" gradientTransform="matrix(28.6721 0 0 28.672 -2450.2327 9143.6504)">
+		<stop  offset="0" style="stop-color:#F08DAA"/>
+		<stop  offset="1" style="stop-color:#D53F6F"/>
+	</linearGradient>
+	<path id="Path_214" style="fill:url(#Path_214_00000121267898615036799970000011488971573629159847_);" d="M66.449,40.795
+		c0,7.865-6.4,14.236-14.3,14.236s-14.3-6.371-14.3-14.236c0-7.865,6.4-14.236,14.3-14.236
+		C60.049,26.46,66.449,32.831,66.449,40.795L66.449,40.795z"/>
+	
+		<linearGradient id="Path_215_00000131337774689570107420000014186581440158599573_" gradientUnits="userSpaceOnUse" x1="1100.5551" y1="0.5961" x2="1138.6271" y2="0.5961" gradientTransform="matrix(1 0 0 -1 -1079.406 37.011)">
+		<stop  offset="0" style="stop-color:#FEECD2"/>
+		<stop  offset="0" style="stop-color:#CDAC82"/>
+		<stop  offset="1" style="stop-color:#A46000"/>
+	</linearGradient>
+	<path id="Path_215" style="fill:url(#Path_215_00000131337774689570107420000014186581440158599573_);" d="M59.149,36.415
+		c0,10.453-8.5,18.915-19,18.915s-19-8.462-19-18.915s8.5-18.915,19-18.915S59.149,25.962,59.149,36.415L59.149,36.415z"/>
+</g>
+</svg>

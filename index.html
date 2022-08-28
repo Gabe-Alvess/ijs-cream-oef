@@ -6,79 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>
     <title>Ice Cream Creator</title>
   </head>
   <body>
     <h1>Ice Cream Creator</h1>
-    <form>
-      <div class="wrapper">
-        <h2>Maak uw Keuze</h2>
-        <div class="keuze">
-          <div class="label" id="horentje">Horentje:</div>
-          <div class="radio" id="radiobtn1">
-            <input class="radioCheck" type="radio" name="kseuze" value="horentje" />
+    <div class="wrapper1">
+      <form>
+        <div class="wrapper2">
+          <h2 id="subTitel1">Maak uw Keuze</h2>
+          <div class="keuze">
+            <label for="radio1" class="label" id="horentje">Horentje:</label>
+            <div class="radio" id="radiobtn1">
+              <input
+                type="radio"
+                name="keuze"
+                class="size"
+                id="radio1"
+                value="horentje"
+                required
+              />
+            </div>
+            <img
+              class="image"
+              id="horentjeImg"
+              src="images/horentje.svg"
+              alt="horentje icoon"
+            />
+            <label for="radio2" class="label" id="potje">Potje:</label>
+            <div class="radio" id="radiobtn2">
+              <input
+                type="radio"
+                name="keuze"
+                class="size"
+                id="radio2"
+                value="potje"
+                required
+              />
+            </div>
+            <img
+              class="image"
+              id="potjeImg"
+              src="images/potje.svg"
+              alt="Potje icoon"
+            />
           </div>
-          <img
-            class="image"
-            id="img1"
-            src="images/horentje.svg"
-            alt="horentje icoon"
-          />
-
-          <div class="label" id="potje">Potje:</div>
-          <div class="radio" id="radiobtn2">
-            <input class="radioCheck" type="radio" name="keuze" value="potje" />
+          <h2 id="subTitel2">Welke smaken?</h2>
+          <div class="smaak">
+            <label for="check1" class="label" id="choco">Chocolade:</label>
+            <div class="checkbox" id="checkbtn1">
+              <input
+                type="checkbox"
+                name="chocolade"
+                class="size"
+                id="check1"
+                value="chocolade"
+              />
+            </div>
+            <div class="aantal" id="aantalChoco">
+              <input
+                type="number"
+                min="1"
+                max="5"
+                class="boxSize"
+                id="chocoInput"
+                placeholder="aantal"
+              />
+            </div>
+            <img
+              class="image"
+              id="chocoImg"
+              src="images/choco.svg"
+              alt="chocolade icoon"
+            />
+            <label for="check2" class="label" id="vanille">Vanille:</label>
+            <div class="checkbox" id="checkbtn2">
+              <input
+                type="checkbox"
+                name="vanille"
+                class="size"
+                id="check2"
+                value="vanille"
+              />
+            </div>
+            <div class="aantal" id="aantalVanille">
+              <input
+                type="number"
+                min="1"
+                max="5"
+                class="boxSize"
+                id="vanilleInput"
+                placeholder="aantal"
+              />
+            </div>
+            <img
+              class="image"
+              id="vanilleImg"
+              src="images/vanille.svg"
+              alt="vanille icoon"
+            />
+            <label for="check3" class="label" id="aardbei">Aardbei:</label>
+            <div class="checkbox" id="checkbtn3">
+              <input
+                type="checkbox"
+                name="aardbei"
+                class="size"
+                id="check3"
+                value="aardbei"
+              />
+            </div>
+            <div class="aantal" id="aantalAardbei">
+              <input
+                type="number"
+                min="1"
+                max="5"
+                class="boxSize"
+                id="aardbeiInput"
+                placeholder="aantal"
+              />
+            </div>
+            <img
+              class="image"
+              id="aardbeiImg"
+              src="images/aardbei.svg"
+              alt="aardbei icoon"
+            />
           </div>
-          <img
-            class="image"
-            id="img2"
-            src="images/potje.svg"
-            alt="Potje icoon"
-          />
+          <div class="buttons">
+            <button class="btns" id="btn1" type="reset">Resetten</button>
+            <button class="btns" id="btn2" type="submit">Bestellen</button>
+          </div>
         </div>
-
-        <h2>Welke smaken?</h2>
-        <div class="smaak">
-          <div class="label" id="choco">Chocolade:</div>
-          <div class="checkbox" id="checkbtn1">
-            <input type="checkbox" name="chocolade" />
-          </div>
-          <img
-            class="image"
-            id="img3"
-            src="images/choco.svg"
-            alt="chocolade icoon"
-          />
-
-          <div class="label" id="vanille">Vanille:</div>
-          <div class="checkbox" id="checkbtn2">
-            <input type="checkbox" name="vanille" />
-          </div>
-          <img
-            class="image"
-            id="img4"
-            src="images/vanille.svg"
-            alt="vanille icoon"
-          />
-
-          <div class="label" id="aardbei">Aardbei:</div>
-          <div class="checkbox" id="checkbtn3">
-            <input type="checkbox" name="aardbei" />
-          </div>
-          <img
-            class="image"
-            id="img5"
-            src="images/aardbei.svg"
-            alt="aardbei icoon"
-          />
-        </div>
-
-        <div class="buttons">
-          <button class="btns" id="btn1" type="reset">Resetten</button>
-          <button class="btns" id="btn2" type="submit">Bestellen</button>
-        </div>
+      </form>
+      <div class="ijsBeelden">
+        <img src="images/lege-horentje.svg" alt="horentje" id="beeldHorentje" />
+        <img src="images/lege-potje.svg" alt="potje" id="beeldPotje" />
       </div>
-    </form>
+    </div>
   </body>
 </html>
