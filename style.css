@@ -14,7 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url(images/ice-cream-back1.jpg);
 }
 
@@ -98,7 +99,7 @@ h2 {
   height: auto;
   padding: 8px;
   margin-bottom: 5px;
-  border-radius: 0px 6px 6px 0px;
+  border-radius: 0px 5px 5px 0px;
   background-color: #df4d19;
 }
 
@@ -136,19 +137,14 @@ h2 {
   display: none;
   grid-column: 1/2;
   grid-row: 1/2;
-  width: 450px;
-  height: 450px;
-  padding-bottom: 100px;
-  background-color: rgba(240, 248, 255, 0.400);
-  backdrop-filter: blur(3px);
-  border-radius: 5px;
 }
 
 .wrapper2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(500px + 3vw);
+  width: 500px;
+  height: auto;
   background-color: rgba(240, 248, 255, 0.400);
   backdrop-filter: blur(3px);
   border-radius: 5px;

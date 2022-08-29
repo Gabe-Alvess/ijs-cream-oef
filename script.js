@@ -1,21 +1,16 @@
-$(document).ready(function(){
-  $("#radio1").click(function(){
-  $("#beeldHorentje").show();
+$(document).ready(function () {
+  $("#radio1").click(function () {
+    $("#beeldHorentje").show();
+    $("#beeldPotje").hide();
   });
-  $("#radio2").click(function(){
+  $("#radio2").click(function () {
     $("#beeldHorentje").hide();
-  });
-  $("#btn1").click(function(){
-    $("#beeldHorentje").hide();
-  });
-  $("#radio2").click(function(){
     $("#beeldPotje").show();
   });
-  $("#radio1").click(function(){
-    $("#beeldPotje").hide();
-  });
-  $("#btn1").click(function(){
-    $("#beeldPotje").hide();
+
+  $("#btn1").click(function () {
+    $("#check1, #check2, #check3").checked = false;
+    $("#beeldHorentje, #beeldPotje, #chocoInput, #vanilleInput, #aardbeiInput").hide();
   });
 });
 
