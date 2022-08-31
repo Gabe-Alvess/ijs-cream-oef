@@ -10,10 +10,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url(images/ice-cream-back1.jpg);
@@ -22,15 +18,17 @@ body {
 .image {
   width: 50px;
   height: auto;
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 5px;
-  border-radius: 6px 0px 0px 6px;
+  border-radius: 5px 0px 0px 5px;
   background-color: #df4d19;
+}
+h1, h2 {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
   color: hotpink;
   font-family: "Lobster", cursive, sans-serif;
   text-shadow: 2px 2px 2px rgb(200, 0, 160);
@@ -40,9 +38,7 @@ h1 {
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  width: 500px;
   color: #7b3f00;
   font-family: "Acme", sans-serif;
   text-shadow: 2px 2px 2px rgb(200, 117, 117);
@@ -60,7 +56,11 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #df4d19;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .label:hover {
@@ -68,47 +68,30 @@ h2 {
   color: #e63870;
 }
 
-.radio {
+.radio, .checkbox, .aantal {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: auto;
-  padding: 5px;
-  border-radius: 0px 6px 6px 0px;
   margin-bottom: 5px;
-  background-color: #df4d19;
-}
-
-.checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: auto;
   padding: 5px;
-  margin-bottom: 5px;
+  border-radius: 0px 5px 5px 0px;
   background-color: #df4d19;
 }
 
 .aantal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: auto;
-  padding: 8px;
-  margin-bottom: 5px;
-  border-radius: 0px 5px 5px 0px;
-  background-color: #df4d19;
+  display: none;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 10px;
+  border-radius: 5px;
 }
 
 #chocoInput,
 #vanilleInput,
 #aardbeiInput {
   display: none;
-  position: absolute;
-  text-align: center;
 }
 
 .size {
@@ -122,153 +105,128 @@ h2 {
 }
 
 .wrapper1 {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-auto-rows: auto;
 }
 
 .ijsBeelden {
-  display: grid;
-  grid-template-columns: 450px;
-  grid-template-rows: 450px;
+  width: 500px;
 }
 
 #beeldHorentje,
 #beeldPotje {
   display: none;
-  grid-column: 1/2;
-  grid-row: 1/2;
 }
 
 .wrapper2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
+  width: 510px;
   height: auto;
-  background-color: rgba(240, 248, 255, 0.400);
-  backdrop-filter: blur(3px);
+  margin-left: 10px;
   border-radius: 5px;
+  background-color: rgba(240, 248, 255, 0.4);
+  backdrop-filter: blur(3px);
 }
 
 .keuze {
   display: grid;
-  grid-auto-columns: auto;
+  grid-template-columns: auto 70px 155px 60px auto;
   grid-auto-rows: auto;
 }
 
 #horentjeImg {
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 
 #potjeImg {
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 
 #horentje {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/2;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #df4d19;
-  text-shadow: 2px 2px 2px black;
 }
 
 #potje {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 2/3;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #df4d19;
-  text-shadow: 2px 2px 2px black;
 }
 
 #radiobtn1 {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1/2;
 }
 
 #radiobtn2 {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 2/3;
 }
 
 .smaak {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto 70px 155px 60px auto;
   grid-auto-rows: auto;
 }
 
-.chocoImg {
-  grid-column: 1/2;
+#chocoImg {
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 
-.vanilleImg {
-  grid-column: 1/2;
+#vanilleImg {
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 
-.aardbeiImg {
-  grid-column: 1/2;
+#aardbeiImg {
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 
 #choco {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/2;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #df4d19;
-  text-shadow: 2px 2px 2px black;
 }
 
 #vanille {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 2/3;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #df4d19;
-  text-shadow: 2px 2px 2px black;
 }
 
 #aardbei {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 3/4;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: #df4d19;
-  text-shadow: 2px 2px 2px black;
 }
 
 #checkbtn1 {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 1/2;
 }
 
 #checkbtn2 {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 2/3;
 }
 
 #checkbtn3 {
-  grid-column: 3/4;
+  grid-column: 4/5;
   grid-row: 3/4;
 }
 
 #aantalChoco {
-  grid-column: 4/5;
+  grid-column: 5/6;
   grid-row: 1/2;
 }
 
 #aantalVanille {
-  grid-column: 4/5;
+  grid-column: 5/6;
   grid-row: 2/3;
 }
 
 #aantalAardbei {
-  grid-column: 4/5;
+  grid-column: 5/6;
   grid-row: 3/4;
 }
 
@@ -319,4 +277,29 @@ input {
 
 #btn2:hover {
   background-color: green;
+}
+
+#h1, #h2, #h3, #h4 {
+  width: 650px;
+  left: 60vw;
+  position: absolute;
+}
+.disapear {
+  display: none;
+}
+
+#h1 {
+  top: 35vh;
+}
+
+#h2 {
+  top: 45vh;
+}
+
+#h3 {
+  top: 55vh;
+}
+
+#h4 {
+  top: 65vh;
 }
